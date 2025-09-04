@@ -1,4 +1,8 @@
-import { emitirExcluirDocumento, emitirTextoEditor, selecionarDocumento } from "./socket-front-documento.js";
+import {
+  emitirExcluirDocumento,
+  emitirTextoEditor,
+  selecionarDocumento,
+} from "./socket-front-documento.js";
 
 const parametros = new URLSearchParams(window.location.search);
 const nomeDocumento = parametros.get("nome");

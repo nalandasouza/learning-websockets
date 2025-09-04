@@ -22,6 +22,6 @@ function emitirExcluirDocumento(nome) {
 
 socket.on("excluir_documento_sucesso", (nome) => {
   alertarERedirecionar(nome);
-})
+});
 
 export { emitirTextoEditor, selecionarDocumento, emitirExcluirDocumento };

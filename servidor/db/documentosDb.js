@@ -39,10 +39,16 @@ function atualizaDocumento(nome, texto) {
 
 function excluirDocumento(nome) {
   const resultado = documentosColecao.deleteOne({
-    nome
+    nome,
   });
 
   return resultado;
 }
 
-export { encontrarDocumento, atualizaDocumento, obterDocumentos, adicionarDocumento, excluirDocumento };
+export {
+  encontrarDocumento,
+  atualizaDocumento,
+  obterDocumentos,
+  adicionarDocumento,
+  excluirDocumento,
+};
